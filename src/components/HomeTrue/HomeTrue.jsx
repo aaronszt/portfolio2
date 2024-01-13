@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
-import Ima from '../../assets/image/Ima.png';
+import Ima from '../../assets/image/123.webp';
 import style from './HomeTrue.module.css';
 import { Link, NavLink } from 'react-router-dom';
 import alert from 'sweetalert';
