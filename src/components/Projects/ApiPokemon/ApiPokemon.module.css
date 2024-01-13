@@ -1,0 +1,112 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    grid-template-rows: repeat(20, 1fr);
+    background-color: #e0e0e0;
+}
+
+.classP {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 15;
+    grid-row-end: 21;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.classP p {
+    padding: 40px;
+}
+
+.Slider {
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 13;
+}
+
+.Slider li img {
+    width: 700px;
+    height: 400px;
+}
+
+.sliderContainer {
+    position: relative;
+    height: 100%;
+}
+
+.containerImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+.leftArrow{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.rigthArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.dotsCointainer {
+    display: flex;
+    justify-content: center;
+}
+
+.dotsCointainerItem {
+    margin: 8px 3px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+}
+
+div.active {
+    background-color: #ccc;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.arrowContainer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 40px;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.arrowLink {
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    pointer-events: auto;
+}
