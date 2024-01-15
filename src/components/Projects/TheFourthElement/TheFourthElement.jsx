@@ -69,7 +69,10 @@ const TheFourthElement = () => {
                 </div>
             </div>
             <div className={style.classP}>
-                <p>Plataforma para Estanislao Brachrach. El cual es un curso para deportistas de alto rendimiento, con	visualización de videos, pasarelas de pago, administración de usuarios, reproduccion multimedia. Tecnología utilizadas: Next js, React, Sass, Next UI, Node .js, MongoDB, Next-Auth, Express, Tailwind, SCRUM, GIT, MVC, POO, vista entidad relacion, Docker, Notion, AWS, Lucidchart, Swagger, Figma.</p>
+                <p>
+                    <a href="https://the-fourth-element-client.vercel.app/" target="_blank" rel="noreferrer noopener" >TheFourthElement</a><br></br>
+                    Plataforma para Estanislao Brachrach. El cual es un curso para deportistas de alto rendimiento, con	visualización de videos, pasarelas de pago, administración de usuarios, reproduccion multimedia. Tecnología utilizadas: Next js, React, Sass, Next UI, Node .js, MongoDB, Next-Auth, Express, Tailwind, SCRUM, GIT, MVC, POO, vista entidad relacion, Docker, Notion, AWS, Lucidchart, Swagger, Figma.
+                </p>
             </div>
             <div className={style.arrowContainer}>
                 <Link to="/" className={style.arrowLink}>&#x2190;</Link>
