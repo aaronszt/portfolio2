@@ -70,7 +70,7 @@ const ApiPokemon = () => {
             </div>
             <div className={style.classP}>
                 <p>
-                    <a href="api-pokemon-frontend.vercel.app" target="_blank" rel="noreferrer noopener" >Web Api</a><br></br>
+                    <a href="https://api-pokemon-frontend.vercel.app/" target="_blank" rel="noreferrer noopener" >Web Api</a><br></br>
                     REST APis. Pagina con contenido "Pokemon", CRUD completo, administracion de usuario. Tecnología utilizadas: Node.js, Express.js, PostgreSQL, Sequelize, React, React Redux, HTML, CSS, Docker.
                 </p>
             </div>
