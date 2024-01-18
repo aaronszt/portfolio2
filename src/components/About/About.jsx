@@ -18,28 +18,28 @@ const About = () => {
                 My heart beats for Javascript and C#.
                 <br />
                 <br />
-                My journey into the programming world began in late 2022, and I am 
+                My journey into the programming world began in late 2022, and 
                 <br />
-                currently immersed in learning the T3 stack, which includes SQL, 
+                I am currently immersed in learning the T3 stack, which includes,  
                 <br />
-                NoSQL, PostgresSQL, MongoDB, tRPC, Next.js, NextAuth, Node, Express, 
+                SQL,NoSQL, PostgresSQL, MongoDB, tRPC, Next.js, NextAuth, Node,  
                 <br />
-                React, React-Redux, HTML, CSS, C#, .NET, ASP.NET, AJAX, JQuery, 
+                Express,React, React-Redux, HTML, CSS, C#, .NET, ASP.NET, AJAX,  
                 <br />
-                Tailwind, Bootstrap, SCRUM, Model View Controller, Entity Relationship, 
+                JQuery,Tailwind, Bootstrap, SCRUM, Model View Controller, Entity  
                 <br />
-                REST APIs, Postman, GIT.
+                Relationship, REST APIs, Postman, GIT.
                 <br />
                 I am determined to become an expert in these technologies 
                 <br />
                 and continuously refine my skills.
                 <br />
                 <br />
-                In summary, I am a technology enthusiast and a committed Full-Stack 
+                In summary, I am a technology enthusiast and a committed  
                 <br />
-                developer dedicated to lifelong learning, eager to take on new 
+                Full-Stackdeveloper dedicated to lifelong learning, eager to take 
                 <br />
-                challenges in the exciting field of web development.
+                on new challenges in the exciting field of web development.
             </p>
             <div className={style.arrowContainer}>
                 <Link to="/" className={style.arrowLink}>&#x2190;</Link>
