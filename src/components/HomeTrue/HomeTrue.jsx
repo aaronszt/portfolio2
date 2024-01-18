@@ -42,6 +42,7 @@ const HomeTrue = () => {
                 </a>
             </div>
             <h1>Full Stack Web Developer</h1>
+            <h2>Oriented Back End</h2>
                 <h3 className={style.classH3}>
                     <Link to = '/projects' className={style.claseLink}>
                         Projects

@@ -11,12 +11,17 @@ const TheFourthElement = () => {
         const listNode = listRef.current;
         const imgNode = listNode.querySelectorAll("li > img")[currentIndex];
         if(imgNode){
+            listNode.style.scrollBehavior = 'auto';
             imgNode.scrollIntoView({
-                behavior: "smooth",
+                behavior: "auto",
                 inline: "start"
-            })
+            });
+            setTimeout(() => {
+                listNode.style.scrollBehavior = 'smooth';
+            }, 500);
         }
-    }, [currentIndex])
+    }, [currentIndex]);
+    
 
     const scrollToImage = (direction) => {
         if (direction === 'prev'){
@@ -71,7 +76,7 @@ const TheFourthElement = () => {
             <div className={style.classP}>
                 <p>
                     <a href="https://the-fourth-element-client.vercel.app/" target="_blank" rel="noreferrer noopener" >TheFourthElement</a><br></br>
-                    Plataforma para Estanislao Brachrach. El cual es un curso para deportistas de alto rendimiento, con	visualización de videos, pasarelas de pago, administración de usuarios, reproduccion multimedia. Tecnología utilizadas: Next js, React, Sass, Next UI, Node .js, MongoDB, Next-Auth, Express, Tailwind, SCRUM, GIT, MVC, POO, vista entidad relacion, Docker, Notion, AWS, Lucidchart, Swagger, Figma.
+                    Platform for Estanislao Brachrach. It is a course for high-performance athletes, featuring video visualization, payment gateways, user management, multimedia playback. Technologies used: Next js, React, Sass, Next UI, Node .js, MongoDB, Next-Auth, Express, Tailwind, SCRUM, GIT, MVC, POO, vista entidad relacion, Docker, Notion, AWS, Lucidchart, Swagger, Figma.
                 </p>
             </div>
             <div className={style.arrowContainer}>

@@ -15,13 +15,13 @@
 }
 
 .container h2 {
+    text-align: center;
     grid-column-start: 3;
     grid-column-end: 7;
     grid-row-start: 5;
     grid-row-end: 6;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
+    color: rgb(47, 70, 70);
+    margin: 0;
 }
 
 .classH3 {

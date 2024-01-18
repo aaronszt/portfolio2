@@ -11,12 +11,17 @@ const ApiPokemon = () => {
         const listNode = listRef.current;
         const imgNode = listNode.querySelectorAll("li > img")[currentIndex];
         if(imgNode){
+            listNode.style.scrollBehavior = 'auto';
             imgNode.scrollIntoView({
-                behavior: "smooth",
+                behavior: "auto",
                 inline: "start"
-            })
+            });
+            setTimeout(() => {
+                listNode.style.scrollBehavior = 'smooth';
+            }, 500);
         }
-    }, [currentIndex])
+    }, [currentIndex]);
+    
 
     const scrollToImage = (direction) => {
         if (direction === 'prev'){
@@ -70,8 +75,8 @@ const ApiPokemon = () => {
             </div>
             <div className={style.classP}>
                 <p>
-                    <a href="https://api-pokemon-frontend.vercel.app/" target="_blank" rel="noreferrer noopener" >Web Api</a><br></br>
-                    REST APis. Pagina con contenido "Pokemon", CRUD completo, administracion de usuario. Tecnología utilizadas: Node.js, Express.js, PostgreSQL, Sequelize, React, React Redux, HTML, CSS, Docker.
+                    <a href="https://api-pokemon-frontend.vercel.app/" target="_blank" rel="noreferrer noopener" >REST API</a><br></br>
+                    REST APi. A page with 'Pokemon' content, complete CRUD, user management. Technologies used: Node.js, Express.js, PostgreSQL, Sequelize, React, React Redux, HTML, CSS, Docker.
                 </p>
             </div>
             <div className={style.arrowContainer}>
