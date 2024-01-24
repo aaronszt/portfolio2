@@ -10,7 +10,7 @@
 .classP {
     display: flex;
     align-items: center;
-    background-color: rgb(170, 148, 148);
+    background-color: #264b46;
     grid-column-start: 1;
     grid-column-end: 11;
     grid-row-start: 15;
@@ -22,11 +22,12 @@
 .classP p {
     padding: 40px;
     text-align: center;
+    color: white;
 }
 
 .classP a {
     text-decoration: none;
-    color: rgb(43, 47, 94);
+    color: #6aa3b4;
     text-align: center;
     font-size: 20px;
 }
@@ -116,6 +117,6 @@ div.active {
 .arrowLink {
     font-size: 40px;
     text-decoration: none;
-    color: rgb(185, 16, 73);
+    color: #00c6ab;
     pointer-events: auto;
 }

@@ -1,24 +1,27 @@
 .footer {
     display: flex;
-    background-color: #333;
+    background-color: #264b46;
     color: white;
     text-align: center;
     align-items: center;
-    justify-content: center;
     text-decoration: none;
-    gap: 20px;
     height: 100%;
+    justify-content: center;
 }
 
 .footer h3 {
-    margin: 0;
     font-size: 15px;
+    margin: 0;
 }
 
 .claseA {
     text-decoration: none;
     color: white;
     font-size: 12px;
+}
+
+.classEspace {
+    margin-left: 40px;
 }
 
 .classP {

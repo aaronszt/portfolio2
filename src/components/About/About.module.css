@@ -4,7 +4,7 @@
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(20, 1fr);
     height: 100vh;
-    background-color: #e0e0e0; 
+    background-color: #e0e0e0;
 }
 
 .container h1 {
@@ -13,7 +13,7 @@
     grid-column-end: 10;
     grid-row-start: 2;
     grid-row-end: 20;
-    color: rgb(43, 47, 94);
+    color: #416864;
 }
 
 .container p {
@@ -22,6 +22,7 @@
     grid-row-start: 5;
     grid-row-end: 20;
     font-size: 20px;
+    color: #416864;
 }
 
 .classImg {
@@ -50,6 +51,6 @@
 .arrowLink {
     font-size: 40px;
     text-decoration: none;
-    color: rgb(185, 16, 73);
+    color: #00c6ab;
     pointer-events: auto;
 }
