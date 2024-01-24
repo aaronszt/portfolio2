@@ -15,8 +15,8 @@ const Footer = () => {
 
     return (
         <div className={style.footer}>
-            <h3>Contact</h3>
             <div>
+                <h3>Contact</h3>
                 <a href="https://www.linkedin.com/in/aaron-sztychmasjter-218307266/" target="_blank" rel="noreferrer noopener" className={style.claseA}>Linkedin</a> |{' '}
                 <a href="https://github.com/aaronszt" target="_blank" rel="noreferrer noopener" className={style.claseA}>Github</a> |{' '}
                 <span onClick={hadlerAlert} className={style.classP}>Phone</span>
