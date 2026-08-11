@@ -76,6 +76,10 @@
     display: block;
 }
 
+.Slider li img.fitContain {
+    object-fit: contain;
+}
+
 .sliderContainer {
     position: relative;
     height: 100%;

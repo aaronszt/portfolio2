@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
-import Ima from '../../assets/image/123.webp';
+import Ima from '../../assets/image/untitled-design.png';
 import style from './HomeTrue.module.css';
 import { Link } from 'react-router-dom';
 import alert from 'sweetalert';
@@ -10,7 +10,8 @@ const HomeTrue = () => {
 
     const [, setAccess] = useState(false);
 
-    const hadlerAlert = () => {
+    const hadlerAlert = (e) => {
+        e.preventDefault();
         alert({
             title: 'CV',
             text: 'Are you sure about downloading the CV?',
@@ -19,8 +20,9 @@ const HomeTrue = () => {
         }).then(response => {
             if(response) {
                 setAccess(true)
+                const pdfUrl = '/CV-S-Aaron.Sztychmasjter.pdf';
                 const link = document.createElement('a');
-                link.href = './CV-S-Aaron.Sztychmasjter.pdf';
+                link.href = pdfUrl;
                 link.download = 'CV-S-Aaron.Sztychmasjter.pdf';
                 document.body.appendChild(link);
                 link.click();
@@ -40,8 +42,7 @@ const HomeTrue = () => {
                     <span>CV</span>
                 </a>
             </div>
-            <h1>Full Stack Web Developer</h1>
-            <h2>Oriented Back End</h2>
+            <h1>Backend Developer</h1>
                 <h3 className={style.classH3}>
                     <Link to = '/projects' className={style.claseLink}>
                         Projects
@@ -53,7 +54,8 @@ const HomeTrue = () => {
                     </Link>
                 </h3>
             <div className={style.classImg}>
-                <img src={Ima} alt="Ima"/>
+                <img src={Ima} alt="Aarón Sztychmasjter"/>
+                <p className={style.name}>Aarón Sztychmasjter</p>
             </div>
             <div className={style.classFooter}><Footer/></div>
         </div>

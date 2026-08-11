@@ -53,7 +53,7 @@ const ApiPokemon = () => {
                             {
                                 dataApiPoke.map((item) => {
                                     return <li key={item.id}>
-                                                <img src={item.imgUrl} alt="API Pokemon project screenshot"/>
+                                                <img src={item.imgUrl} alt="API Pokemon project screenshot" className={item.fit ? style.fitContain : ''}/>
                                             </li>
                                 })
                             }
