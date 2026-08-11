@@ -11,35 +11,17 @@ const About = () => {
                 <img src={imgage} alt="imagen-programando" className={style.image} />
             </div>
             <p>
-                I am a Full-Stack developer specializing in Backend from Argentina 
+                Backend Developer focused on the .NET (C#) and Node.js ecosystems, with
                 <br />
-                with a passion for creating exceptional web experiences.
+                experience building scalable RESTful APIs and system integrations.
                 <br />
-                My heart beats for Javascript and C#.
+                Specialized in designing robust architectures using Clean Architecture,
                 <br />
+                CQRS, and SOLID principles.
                 <br />
-                My journey into the programming world began in late 2022, and 
+                Experienced in relational database modeling and optimization with
                 <br />
-                I am currently immersed in learning the T3 stack, which includes,  
-                <br />
-                SQL,NoSQL, PostgresSQL, MongoDB, tRPC, Next.js, NextAuth, Node,  
-                <br />
-                Express,React, React-Redux, HTML, CSS, C#, .NET, ASP.NET, AJAX,  
-                <br />
-                JQuery,Tailwind, Bootstrap, SCRUM, Model View Controller, Entity  
-                <br />
-                Relationship, REST APIs, Postman, GIT.
-                <br />
-                I am determined to become an expert in these technologies 
-                <br />
-                and continuously refine my skills.
-                <br />
-                <br />
-                In summary, I am a technology enthusiast and a committed  
-                <br />
-                Full-Stackdeveloper dedicated to lifelong learning, eager to take 
-                <br />
-                on new challenges in the exciting field of web development.
+                SQL Server and NoSQL databases.
             </p>
             <div className={style.arrowContainer}>
                 <Link to="/" className={style.arrowLink}>&#x2190;</Link>

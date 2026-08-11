@@ -1,10 +1,13 @@
 .container{
+    position: relative;
     height: 100vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(10, 1fr); 
     grid-template-rows: repeat(20, 1fr);
     background-color: #e0e0e0;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .classP {
@@ -23,6 +26,7 @@
     padding: 40px;
     text-align: center;
     color: white;
+    margin: 0;
 }
 
 .classP a {
@@ -33,19 +37,43 @@
 }
 
 .Slider {
-    width: 700px;
+    width: min(700px, 100%);
+    max-width: 100%;
     height: 400px;
     margin: 0 auto;
     grid-column-start: 1;
     grid-column-end: 11;
     grid-row-start: 3;
     grid-row-end: 13;
-    flex-direction: row;
+}
+
+.containerImg ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.containerImg ul::-webkit-scrollbar {
+    display: none;
+}
+
+.Slider li {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
 }
 
 .Slider li img {
-    width: 700px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .sliderContainer {
@@ -119,4 +147,74 @@ div.active {
     text-decoration: none;
     color: #00c6ab;
     pointer-events: auto;
+}
+
+/* ===== Responsive: tablet ===== */
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+        min-height: 100vh;
+        padding: 16px;
+    }
+
+    .Slider {
+        width: 100%;
+        height: 320px;
+        margin: 80px 0 20px;
+    }
+
+    .classP {
+        width: 100%;
+    }
+
+    .classP p {
+        padding: 24px;
+        font-size: 15px;
+    }
+
+    .classP a {
+        font-size: 18px;
+    }
+
+    .arrowContainer {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        margin: 0;
+    }
+
+    .rigthArrow {
+        right: 16px;
+        font-size: 34px;
+    }
+
+    .leftArrow {
+        left: 16px;
+        font-size: 34px;
+    }
+}
+
+/* ===== Responsive: mobile ===== */
+@media (max-width: 480px) {
+    .Slider {
+        height: 220px;
+        margin-top: 72px;
+    }
+
+    .classP p {
+        padding: 18px;
+        font-size: 14px;
+    }
+
+    .classP a {
+        font-size: 16px;
+    }
+
+    .arrowLink {
+        font-size: 34px;
+    }
 }

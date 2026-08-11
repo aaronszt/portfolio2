@@ -1,0 +1,121 @@
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    background-color: #e0e0e0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.imageContainer {
+    width: min(700px, 100%);
+    max-width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 13;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    background-color: #264b46;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 15;
+    grid-row-end: 21;
+    border-radius: 20px;
+    border: 1px solid rgb(236, 189, 189);
+    box-sizing: border-box;
+}
+
+.description p {
+    padding: 40px;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.arrowContainer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 40px;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.arrowLink {
+    font-size: 40px;
+    text-decoration: none;
+    color: #00c6ab;
+    pointer-events: auto;
+}
+
+/* ===== Responsive: tablet ===== */
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+        min-height: 100vh;
+        padding: 16px;
+    }
+
+    .imageContainer {
+        width: 100%;
+        height: 320px;
+        margin: 80px 0 20px;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .description p {
+        padding: 24px;
+        font-size: 15px;
+    }
+
+    .arrowContainer {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        margin: 0;
+    }
+}
+
+/* ===== Responsive: mobile ===== */
+@media (max-width: 480px) {
+    .imageContainer {
+        height: 220px;
+        margin-top: 72px;
+    }
+
+    .description p {
+        padding: 18px;
+        font-size: 14px;
+    }
+
+    .arrowLink {
+        font-size: 34px;
+    }
+}

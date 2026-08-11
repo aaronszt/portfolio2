@@ -14,16 +14,12 @@ const TheFourthElement = () => {
 
     useEffect(() => {
         const listNode = listRef.current;
-        const imgNode = listNode.querySelectorAll("li > img")[currentIndex];
-        if(imgNode){
-            listNode.style.scrollBehavior = 'auto';
-            imgNode.scrollIntoView({
-                behavior: "auto",
-                inline: "start"
+        if (listNode) {
+            // Scroll ONLY the horizontal slider (<ul>), never the page/ancestors.
+            listNode.scrollTo({
+                left: listNode.clientWidth * currentIndex,
+                behavior: 'smooth'
             });
-            setTimeout(() => {
-                listNode.style.scrollBehavior = 'smooth';
-            }, 500);
         }
     }, [currentIndex]);
     
@@ -57,7 +53,7 @@ const TheFourthElement = () => {
                             {
                                 dataTheFourthElement.map((item) => {
                                     return <li key={item.id}>
-                                                <img src={item.imgUrl} width={500} height={280}/>
+                                                <img src={item.imgUrl} alt="The Fourth Element project screenshot"/>
                                             </li>
                                 })
                             }
