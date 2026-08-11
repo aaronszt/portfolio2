@@ -2,15 +2,14 @@ import React from 'react';
 import Footer from '../Footer/Footer';
 import Ima from '../../assets/image/123.webp';
 import style from './HomeTrue.module.css';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import alert from 'sweetalert';
 import { useState } from 'react';
 
 const HomeTrue = () => {
 
-    const [access, setAccess] = useState(false);
-    const wordReference = "while (behappy()) { code();}";
-    
+    const [, setAccess] = useState(false);
+
     const hadlerAlert = () => {
         alert({
             title: 'CV',
@@ -37,7 +36,7 @@ const HomeTrue = () => {
     return (
         <div className={style.container}>
             <div className={style.diva}>
-                <a href="#" onClick={hadlerAlert}>
+                <a href="/" onClick={hadlerAlert}>
                     <span>CV</span>
                 </a>
             </div>
